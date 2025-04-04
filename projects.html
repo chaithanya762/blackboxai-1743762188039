@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Chaithanya S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-lg">Chaithanya S</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="projects.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-semibold">Projects</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">My Projects</h1>
+            <p class="text-xl max-w-2xl mx-auto">Showcasing my technical work and achievements</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Project Filter -->
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-blue-700 bg-blue-100 rounded-l-lg hover:bg-blue-200 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                        All
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                        AI/ML
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                        Web Dev
+                    </button>
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-r-md focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700">
+                        IoT
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg" alt="GlaucoGuard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">GlaucoGuard</h3>
+                        <p class="text-gray-600 mb-4">CNN-Based Glaucoma Detection with 97% Accuracy</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Deep Learning</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">CNN</span>
+                        </div>
+                        <div class="project-details">
+                            <h4 class="font-semibold mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>97% accuracy in glaucoma detection from fundus images</li>
+                                <li>Trained on 1291 images with data augmentation</li>
+                                <li>Supports both color and grayscale images</li>
+                                <li>Deployed using Streamlit Share</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Stroke Prediction" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Stroke Prediction</h3>
+                        <p class="text-gray-600 mb-4">ML Model Achieving 94% Accuracy</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Machine Learning</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Scikit-learn</span>
+                        </div>
+                        <div class="project-details">
+                            <h4 class="font-semibold mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>94% accuracy in stroke prediction</li>
+                                <li>Used KNN, Logistic Regression, and Decision Tree algorithms</li>
+                                <li>Identified key risk factors for stroke occurrence</li>
+                                <li>Comprehensive data analysis and feature engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg" alt="IoT System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">IoT Smart Environment</h3>
+                        <p class="text-gray-600 mb-4">Automated Polyhouse Monitoring System</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">C</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">IoT</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Tinkercad</span>
+                        </div>
+                        <div class="project-details">
+                            <h4 class="font-semibold mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Automated polyhouse monitoring system</li>
+                                <li>Measures soil moisture and temperature</li>
+                                <li>Controls irrigation based on thresholds</li>
+                                <li>Displays parameters on LCD screen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg" alt="EnviroMODE" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">EnviroMODE Website</h3>
+                        <p class="text-gray-600 mb-4">Environment Protection Registration Portal</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                        </div>
+                        <div class="project-details">
+                            <h4 class="font-semibold mb-2">Key Features:</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Environment protection registration portal</li>
+                                <li>User input processing with PHPMyAdmin</li>
+                                <li>Query storage functionality</li>
+                                <li>Responsive design for all devices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold">Chaithanya S</h3>
+                    <p class="text-gray-400 mt-2">Web Developer & AI Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/chaithanya762" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="mailto:chaithanyagowda762@gmail.com" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                    <a href="tel:+917892862376" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Chaithanya S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
