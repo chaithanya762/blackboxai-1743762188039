@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Chaithanya S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .timeline-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #e5e7eb;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::after {
+            right: -10px;
+        }
+        .right::after {
+            left: -10px;
+        }
+        .skill-meter {
+            transition: width 1s ease-in-out;
+        }
+        @media screen and (max-width: 768px) {
+            .timeline-container::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::after {
+                left: 21px;
+            }
+            .left::after, .right::after {
+                left: 21px;
+            }
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-lg">Chaithanya S</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-blue-600 border-b-4 border-blue-600 font-semibold">About</a>
+                    <a href="projects.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Projects</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">About Me</h1>
+            <p class="text-xl max-w-2xl mx-auto">Full-stack developer with expertise in AI/ML and a passion for building intelligent systems</p>
+        </div>
+    </section>
+
+    <!-- Professional Timeline -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Education & Experience</h2>
+            <div class="timeline-container">
+                <!-- Education 1 -->
+                <div class="timeline-item left">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">Vidyavardhaka College of Engineering</h3>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">2020 - 2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Bachelor of Engineering in Computer Science</p>
+                        <p class="text-gray-800 font-medium">CGPA: 9.64 (Rank Holder)</p>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="timeline-item right">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">Vidyamandir Independent PUC</h3>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">2018 - 2020</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Pre University (12th Grade)</p>
+                        <p class="text-gray-800 font-medium">Percentage: 96.82%</p>
+                    </div>
+                </div>
+
+                <!-- Education 3 -->
+                <div class="timeline-item left">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">Stella Maris High School</h3>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">2017 - 2018</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">SSLC (10th Grade)</p>
+                        <p class="text-gray-800 font-medium">Percentage: 97.76%</p>
+                    </div>
+                </div>
+
+                <!-- Experience 1 -->
+                <div class="timeline-item right">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">Neuroflares</h3>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Aug 2023 - Feb 2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Artificial Intelligence Intern</p>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>Fine-tuned Meta's Llama 2 model for English applications</li>
+                            <li>Applied hyperparameter optimization techniques</li>
+                            <li>Maintained safety and helpfulness standards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Achievement 1 -->
+                <div class="timeline-item left">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-xl font-semibold">NPTEL Edge Computing</h3>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-2">Top 1% - Elite+Silver Certification</p>
+                        <p class="text-gray-800 font-medium">National level achievement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Proficiency</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Programming Languages -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Python</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-meter bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">JavaScript</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-meter bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">C/C++</span>
+                                <span class="text-gray-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-meter bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technologies -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Technologies & Tools</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Machine Learning</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-meter bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">MySQL</span>
+                                <span class="text-gray-600">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-meter bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Docker</span>
+                                <span class="text-gray-600">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="skill-meter bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Skills -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Other Skills</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Git/GitHub</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Google Cloud</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Android Studio</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">UiPath</span>
+                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Jenkins</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">Microsoft Office</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Leadership & Achievements</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Leadership -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Leadership</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Served as Class Representative, organizing college fest events and workshops</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Led team projects in academic and professional settings</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Achievements -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-trophy text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Achievements</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-award text-yellow-500 mt-1 mr-2"></i>
+                            <span>Top 1% in NPTEL Edge Computing (2024) – Elite+Silver Certification</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-award text-yellow-500 mt-1 mr-2"></i>
+                            <span>Rank Holder in B.E. Computer Science with CGPA: 9.64</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-award text-yellow-500 mt-1 mr-2"></i>
+                            <span>Consistent academic excellence from school through college</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold">Chaithanya S</h3>
+                    <p class="text-gray-400 mt-2">Full-Stack Developer & AI Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/chaithanya762" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="mailto:chaithanyagowda762@gmail.com" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                    <a href="tel:+917892862376" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Chaithanya S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
